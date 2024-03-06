@@ -221,7 +221,7 @@ BasePopData <- InitialPopData %>% filter(Group %in% groupval)
 
 PopData <- rbind(PopData,BasePopData)
 
-groupvalEN <- c('Juvenile males', 'Juvenile females','Subadult males', 'Subadult females','Adulte males','Aulte females')
+groupvalEN <- c('Juvenile males', 'Juvenile females','Subadult males', 'Subadult females','Adult males','Adult females')
 PopData$Group <- factor(PopData$Group, levels=groupval, labels=groupvalEN)
 PopData$Scenario <- factor(PopData$Scenario, levels=c("Initial","Current","Ideal"))
 
