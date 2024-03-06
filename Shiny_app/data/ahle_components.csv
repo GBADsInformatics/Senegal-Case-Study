@@ -1,0 +1,289 @@
+"Species","Disease","Group","AHLE","Mean","SD"
+"Both","All","Adult Combined","Total",227910245438.584,85408478245.697
+"Both","All","Adult Combined","Mortality",57303428224.9736,54605665921.9523
+"Both","All","Adult Combined","Production loss",160627881664.432,87891587898.3625
+"Both","All","Adult Combined","Health expenditure",9978935549.17884,3850683306.2148
+"Both","PPR","Adult Combined","Total",18039613100.4091,108723052628.458
+"Both","PPR","Adult Combined","Mortality",15506159847.1077,108353366092.583
+"Both","PPR","Adult Combined","Production loss",1966299028.48804,109417933907.149
+"Both","PPR","Adult Combined","Health expenditure",567154224.81331,232165716.43381
+"Both","All","Adult Female","Total",145092910547.615,61889147632.7181
+"Both","All","Adult Female","Mortality",36881099827.2224,38193379432.5507
+"Both","All","Adult Female","Production loss",99870114058.7433,63440248920.5597
+"Both","All","Adult Female","Health expenditure",8341696661.64903,3218851386.01534
+"Both","PPR","Adult Female","Total",12031150050.7046,79441416318.3245
+"Both","PPR","Adult Female","Mortality",10664250189.5015,79201355948.8065
+"Both","PPR","Adult Female","Production loss",903224836.286285,79802498394.7849
+"Both","PPR","Adult Female","Health expenditure",463675024.916843,189623289.571647
+"Both","All","Adult Male","Total",82817334890.9694,50375120181.8123
+"Both","All","Adult Male","Mortality",20422328397.7509,34455007510.0344
+"Both","All","Adult Male","Production loss",60757767605.6887,52437990675.7771
+"Both","All","Adult Male","Health expenditure",1637238887.52981,636268949.253142
+"Both","PPR","Adult Male","Total",6008463049.70538,63321723177.3135
+"Both","PPR","Adult Male","Mortality",4841909657.60724,63128010172.026
+"Both","PPR","Adult Male","Production loss",1063074192.20169,63844781231.0997
+"Both","PPR","Adult Male","Health expenditure",103479199.896468,42974321.3367052
+"Both","All","Female Combined","Total",196432905610.482,72834228553.4641
+"Both","All","Female Combined","Mortality",47016439214.729,43764313702.6845
+"Both","All","Female Combined","Production loss",137461700195.995,74302495112.9447
+"Both","All","Female Combined","Health expenditure",11954766199.7582,4576325011.09348
+"Both","PPR","Female Combined","Total",14981262178.3448,93560045601.7469
+"Both","PPR","Female Combined","Mortality",12576627442.1831,93349273785.5875
+"Both","PPR","Female Combined","Production loss",1632744918.2233,94296431589.4351
+"Both","PPR","Female Combined","Health expenditure",771889817.938425,317802646.631767
+"Both","All","Juvenile Combined","Total",44558213973.6315,23462719561.3116
+"Both","All","Juvenile Combined","Mortality",5836126224.96343,6059810356.98369
+"Both","All","Juvenile Combined","Production loss",35164502447.5402,23562484966.892
+"Both","All","Juvenile Combined","Health expenditure",3557585301.12789,1359236761.15728
+"Both","PPR","Juvenile Combined","Total",2304022395.91752,32100121321.557
+"Both","PPR","Juvenile Combined","Mortality",1620112331.89169,32123602279.3042
+"Both","PPR","Juvenile Combined","Production loss",343001166.972488,32746012199.5367
+"Both","PPR","Juvenile Combined","Health expenditure",340908897.053343,151160861.569066
+"Both","All","Juvenile Female","Total",14826382653.2664,8386481567.78523
+"Both","All","Juvenile Female","Mortality",2247486701.74866,2901799399.06406
+"Both","All","Juvenile Female","Production loss",10740308064.8486,8396855513.8521
+"Both","All","Juvenile Female","Health expenditure",1838587886.66917,701551768.057276
+"Both","PPR","Juvenile Female","Total",829214670.125906,11264896380.5412
+"Both","PPR","Juvenile Female","Mortality",461776124.847977,11187215358.0677
+"Both","PPR","Juvenile Female","Production loss",193328240.73859,11452597868.3497
+"Both","PPR","Juvenile Female","Health expenditure",174110304.539339,76745081.2239707
+"Both","All","Juvenile Male","Total",29731831320.3652,18810106111.5784
+"Both","All","Juvenile Male","Mortality",3588639523.21479,3822277095.35489
+"Both","All","Juvenile Male","Production loss",24424194382.6916,18905211496.9545
+"Both","All","Juvenile Male","Health expenditure",1718997414.45872,658027428.85786
+"Both","PPR","Juvenile Male","Total",1474807725.79164,25903572271.3204
+"Both","PPR","Juvenile Male","Mortality",1158336207.0437,25921203083.7106
+"Both","PPR","Juvenile Male","Production loss",149672926.23394,26418903900.5449
+"Both","PPR","Juvenile Male","Health expenditure",166798592.514004,74438982.3669693
+"Both","All","Male Combined","Total",160685264053.814,70959475149.5147
+"Both","All","Male Combined","Mortality",32903387907.9443,37753640788.2039
+"Both","All","Male Combined","Production loss",123020920421.081,72528198329.164
+"Both","All","Male Combined","Health expenditure",4760955724.78901,1825200162.21527
+"Both","PPR","Male Combined","Total",10368795243.2975,92838700705.563
+"Both","PPR","Male Combined","Mortality",7878413443.46085,92912647850.7795
+"Both","PPR","Male Combined","Production loss",2109912710.26489,94272424168.0639
+"Both","PPR","Male Combined","Health expenditure",380469089.571749,162642734.427198
+"Both","All","Overall","Total",357118169664.296,120202278089.163
+"Both","All","Overall","Mortality",79919827122.6732,65595328412.4538
+"Both","All","Overall","Production loss",260482620617.076,122321797400.089
+"Both","All","Overall","Health expenditure",16715721924.5472,6397179430.71759
+"Both","PPR","Overall","Total",25350057421.642,156589566454.407
+"Both","PPR","Overall","Mortality",20455040885.6438,156302372079.503
+"Both","PPR","Overall","Production loss",3742657628.48798,158301283074.291
+"Both","PPR","Overall","Health expenditure",1152358907.51017,479108001.996568
+"Both","All","Subadult Combined","Total",84649710252.0796,36352297966.8537
+"Both","All","Subadult Combined","Mortality",16780272672.7362,14382770230.1655
+"Both","All","Subadult Combined","Production loss",64690236505.1029,36281642468.9389
+"Both","All","Subadult Combined","Health expenditure",3179201074.24046,1209351710.87516
+"Both","PPR","Subadult Combined","Total",5006421925.31428,48186766098.47
+"Both","PPR","Subadult Combined","Mortality",3328768706.64351,47823655493.8209
+"Both","PPR","Subadult Combined","Production loss",1433357433.02724,48965015961.9429
+"Both","PPR","Subadult Combined","Health expenditure",244295785.643522,102026424.90513
+"Both","All","Subadult Female","Total",36513612409.6005,17385240963.3669
+"Both","All","Subadult Female","Mortality",7887852685.75784,6810105060.43055
+"Both","All","Subadult Female","Production loss",26851278072.4027,17213607300.2549
+"Both","All","Subadult Female","Health expenditure",1774481651.43998,673527835.366239
+"Both","PPR","Subadult Female","Total",2120897457.51423,22892347612.4683
+"Both","PPR","Subadult Female","Mortality",1450601127.83368,22735268847.1455
+"Both","PPR","Subadult Female","Production loss",536191841.198299,23355101549.5198
+"Both","PPR","Subadult Female","Health expenditure",134104488.482244,55591421.5244351
+"Both","All","Subadult Male","Total",48136097842.4792,23761213610.754
+"Both","All","Subadult Male","Mortality",8892419986.97844,10678897158.357
+"Both","All","Subadult Male","Production loss",37838958432.7003,23667748284.0688
+"Both","All","Subadult Male","Health expenditure",1404719422.80048,538525958.240513
+"Both","PPR","Subadult Male","Total",2885524467.80004,31097673943.6909
+"Both","PPR","Subadult Male","Mortality",1878167578.80983,30975557573.6322
+"Both","PPR","Subadult Male","Production loss",897165591.828934,31676906670.0018
+"Both","PPR","Subadult Male","Health expenditure",110191297.161278,46614291.1836413
+"Sheep","All","Juvenile Female","Total",9905090175.58793,7773975293.3906
+"Sheep","All","Juvenile Female","Mortality",1021243345.87584,2287567320.34261
+"Sheep","All","Juvenile Female","Production loss",7950031706.82882,7806035546.69858
+"Sheep","All","Juvenile Female","Health expenditure",933815122.883269,507347344.404552
+"Sheep","All","Juvenile Male","Total",26325346274.0858,18598044786.6417
+"Sheep","All","Juvenile Male","Mortality",2860462886.99936,3505486312.76443
+"Sheep","All","Juvenile Male","Production loss",22553366384.6506,18686628794.2768
+"Sheep","All","Juvenile Male","Health expenditure",911517002.435872,495383247.870826
+"Sheep","All","Subadult Female","Total",27877223241.7184,16644204873.9421
+"Sheep","All","Subadult Female","Mortality",4543237875.95244,5874469265.10797
+"Sheep","All","Subadult Female","Production loss",22443633106.1856,16536206494.5047
+"Sheep","All","Subadult Female","Health expenditure",890352259.580396,481609798.438912
+"Sheep","All","Subadult Male","Total",39991263023.3942,22752405440.4602
+"Sheep","All","Subadult Male","Mortality",6112584359.9874,9419847127.15265
+"Sheep","All","Subadult Male","Production loss",33115607390.147,22647881182.3854
+"Sheep","All","Subadult Male","Health expenditure",763071273.259861,413077714.67506
+"Sheep","All","Adult Female","Total",81304775115.265,51012527276.1703
+"Sheep","All","Adult Female","Mortality",22545487847.6085,33481799463.6162
+"Sheep","All","Adult Female","Production loss",53838316106.3658,52077226352.874
+"Sheep","All","Adult Female","Health expenditure",4920971161.29074,2656122239.49048
+"Sheep","All","Adult Male","Total",66574997401.6896,47451094138.3092
+"Sheep","All","Adult Male","Mortality",14462564061.0583,31468726801.0325
+"Sheep","All","Adult Male","Production loss",51150383292.3349,49221072381.7591
+"Sheep","All","Adult Male","Health expenditure",962050048.296435,520900460.788686
+"Sheep","All","Overall","Total",251978695231.741,110629603402.514
+"Sheep","All","Overall","Mortality",51545580377.482,58485180143.9842
+"Sheep","All","Overall","Production loss",191051337986.513,112250555741.349
+"Sheep","All","Overall","Health expenditure",9381776867.74657,5067490634.98779
+"Sheep","All","Juvenile Combined","Total",36230436449.6737,22857083209.7723
+"Sheep","All","Juvenile Combined","Mortality",3881706232.87518,5219176365.53301
+"Sheep","All","Juvenile Combined","Production loss",30503398091.4794,22956611873.9042
+"Sheep","All","Juvenile Combined","Health expenditure",1845332125.31914,1002729789.96722
+"Sheep","All","Subadult Combined","Total",67868486265.1126,34856683259.0867
+"Sheep","All","Subadult Combined","Mortality",10655822235.9398,12569037554.2183
+"Sheep","All","Subadult Combined","Production loss",55559240496.3325,34794981244.5005
+"Sheep","All","Subadult Combined","Health expenditure",1653423532.84026,894441382.925886
+"Sheep","All","Adult Combined","Total",147879772516.955,75380335771.0712
+"Sheep","All","Adult Combined","Mortality",37008051908.6669,48848172795.3528
+"Sheep","All","Adult Combined","Production loss",104988699398.701,77317841320.6908
+"Sheep","All","Adult Combined","Health expenditure",5883021209.58717,3175177165.90797
+"Sheep","All","Female Combined","Total",119087088532.572,62265169780.4299
+"Sheep","All","Female Combined","Mortality",28109969069.4368,38328875879.4844
+"Sheep","All","Female Combined","Production loss",84231980919.3802,63263621948.2418
+"Sheep","All","Female Combined","Health expenditure",6745138543.7544,3642026619.68631
+"Sheep","All","Male Combined","Total",132891606699.17,68125408794.8012
+"Sheep","All","Male Combined","Mortality",23435611308.0451,34479398511.725
+"Sheep","All","Male Combined","Production loss",106819357067.133,69457096028.5627
+"Sheep","All","Male Combined","Health expenditure",2636638323.99217,1427195648.14673
+"Sheep","PPR","Juvenile Female","Total",420438814.82393,10555122826.6113
+"Sheep","PPR","Juvenile Female","Mortality",220796282.787539,10488170128.1279
+"Sheep","PPR","Juvenile Female","Production loss",95640443.9451399,10722885577.3455
+"Sheep","PPR","Juvenile Female","Health expenditure",104002088.09125,64339320.814846
+"Sheep","PPR","Juvenile Male","Total",1114710626.3215,25653085651.2021
+"Sheep","PPR","Juvenile Male","Mortality",926665326.317696,25679151185.0966
+"Sheep","PPR","Juvenile Male","Production loss",85358374.0340996,26160433572.2123
+"Sheep","PPR","Juvenile Male","Health expenditure",102686925.969707,63665746.8577171
+"Sheep","PPR","Subadult Female","Total",1389099540.1188,22132102234.0824
+"Sheep","PPR","Subadult Female","Mortality",958372623.931158,21989401993.9888
+"Sheep","PPR","Subadult Female","Production loss",356876331.0578,22580970191.8418
+"Sheep","PPR","Subadult Female","Health expenditure",73850585.1298424,43311827.8100004
+"Sheep","PPR","Subadult Male","Total",2278633361.5741,29993525237.5836
+"Sheep","PPR","Subadult Male","Mortality",1574601653.5585,29882451197.4505
+"Sheep","PPR","Subadult Male","Production loss",638942900.544601,30584039124.7652
+"Sheep","PPR","Subadult Male","Health expenditure",65088807.4710024,38378160.9955684
+"Sheep","PPR","Adult Female","Total",6602742399.6777,63933105751.7938
+"Sheep","PPR","Adult Female","Mortality",5739028640.78515,63586607886.1626
+"Sheep","PPR","Adult Female","Production loss",589982299.060493,64468054900.355
+"Sheep","PPR","Adult Female","Health expenditure",273731459.832056,155314207.817872
+"Sheep","PPR","Adult Male","Total",4045485247.459,60109881333.6734
+"Sheep","PPR","Adult Male","Mortality",3213515645.48109,59959122862.2085
+"Sheep","PPR","Adult Male","Production loss",769652688.550995,60549221140.8684
+"Sheep","PPR","Adult Male","Health expenditure",62316913.4269178,35662815.6206136
+"Sheep","PPR","Overall","Total",15851109989.975,144289441156.766
+"Sheep","PPR","Overall","Mortality",12632980172.8612,144032129981.889
+"Sheep","PPR","Overall","Production loss",2536453037.19299,146184525912.065
+"Sheep","PPR","Overall","Health expenditure",681676779.920775,394461345.832857
+"Sheep","PPR","Juvenile Combined","Total",1535149441.1454,31403068154.9571
+"Sheep","PPR","Juvenile Combined","Mortality",1147461609.10524,31448177038.6651
+"Sheep","PPR","Juvenile Combined","Production loss",180998817.979198,32031807801.0036
+"Sheep","PPR","Juvenile Combined","Health expenditure",206689014.060957,128004666.288613
+"Sheep","PPR","Subadult Combined","Total",3667732901.6929,46522779639.5831
+"Sheep","PPR","Subadult Combined","Mortality",2532974277.48965,46182412590.7748
+"Sheep","PPR","Subadult Combined","Production loss",995819231.602402,47296278342.9859
+"Sheep","PPR","Subadult Combined","Health expenditure",138939392.600845,81671241.6659771
+"Sheep","PPR","Adult Combined","Total",10648227647.136,95055690193.6577
+"Sheep","PPR","Adult Combined","Mortality",8952544286.26605,94648179221.555
+"Sheep","PPR","Adult Combined","Production loss",1359634987.61099,95952272475.8684
+"Sheep","PPR","Adult Combined","Health expenditure",336048373.258973,190710568.392849
+"Sheep","PPR","Female Combined","Total",8412280754.6205,78966491727.9191
+"Sheep","PPR","Female Combined","Mortality",6918197547.50386,78711366295.2259
+"Sheep","PPR","Female Combined","Production loss",1042499074.06349,79894331317.9329
+"Sheep","PPR","Female Combined","Health expenditure",451584133.053148,258945970.181458
+"Sheep","PPR","Male Combined","Total",7438829235.35501,89715774302.4803
+"Sheep","PPR","Male Combined","Mortality",5714782625.35739,89841969885.1935
+"Sheep","PPR","Male Combined","Production loss",1493953963.13,91110966486.5475
+"Sheep","PPR","Male Combined","Health expenditure",230092646.867627,136593971.867284
+"Goats","All","Juvenile Female","Total",4921292477.67851,3146169293.68939
+"Goats","All","Juvenile Female","Mortality",1226243355.87282,1785350247.79708
+"Goats","All","Juvenile Female","Production loss",2790276358.01979,3094025139.5531
+"Goats","All","Juvenile Female","Health expenditure",904772763.785905,484534369.668384
+"Goats","All","Juvenile Male","Total",3406485046.27934,2816526591.90508
+"Goats","All","Juvenile Male","Mortality",728176636.215434,1523603591.71795
+"Goats","All","Juvenile Male","Production loss",1870827998.04106,2866518105.55684
+"Goats","All","Juvenile Male","Health expenditure",807480412.022846,433123001.996243
+"Goats","All","Subadult Female","Total",8636389167.88208,5021657840.65103
+"Goats","All","Subadult Female","Mortality",3344614809.8054,3445016950.23459
+"Goats","All","Subadult Female","Production loss",4407644966.2171,4781438178.88375
+"Goats","All","Subadult Female","Health expenditure",884129391.859581,470841530.730629
+"Goats","All","Subadult Male","Total",8144834819.08494,6850059775.56402
+"Goats","All","Subadult Male","Mortality",2779835626.99103,5030439803.81834
+"Goats","All","Subadult Male","Production loss",4723351042.55329,6872829605.52605
+"Goats","All","Subadult Male","Health expenditure",641648149.540619,345509781.826351
+"Goats","All","Adult Female","Total",63788135432.3497,35042669070.7537
+"Goats","All","Adult Female","Mortality",14335611979.6139,18376706374.0209
+"Goats","All","Adult Female","Production loss",46031797952.3775,36230203953.2502
+"Goats","All","Adult Female","Health expenditure",3420725500.35829,1818246103.84209
+"Goats","All","Adult Male","Total",16242337489.2798,16912906267.3849
+"Goats","All","Adult Male","Mortality",5959764336.69262,14030922137.8533
+"Goats","All","Adult Male","Production loss",9607384313.3538,18083940380.9711
+"Goats","All","Adult Male","Health expenditure",675188839.233377,365377730.210575
+"Goats","All","Overall","Total",105139474432.555,47007217624.8186
+"Goats","All","Overall","Mortality",28374246745.1912,29702370495.6926
+"Goats","All","Overall","Production loss",69431282630.5627,48604885093.4416
+"Goats","All","Overall","Health expenditure",7333945056.80062,3904413314.84095
+"Goats","All","Juvenile Combined","Total",8327777523.95785,5296504163.53056
+"Goats","All","Juvenile Combined","Mortality",1954419992.08825,3079204382.31509
+"Goats","All","Juvenile Combined","Production loss",4661104356.06085,5308923533.63041
+"Goats","All","Juvenile Combined","Health expenditure",1712253175.80875,917636933.211398
+"Goats","All","Subadult Combined","Total",16781223986.967,10319941843.1802
+"Goats","All","Subadult Combined","Mortality",6124450436.79642,6991664641.15559
+"Goats","All","Subadult Combined","Production loss",9130996008.7704,10279438721.9719
+"Goats","All","Subadult Combined","Health expenditure",1525777541.4002,813944821.905209
+"Goats","All","Adult Combined","Total",80030472921.6295,40154864403.7838
+"Goats","All","Adult Combined","Mortality",20295376316.3066,24405629787.7193
+"Goats","All","Adult Combined","Production loss",55639182265.7312,41795725102.0251
+"Goats","All","Adult Combined","Health expenditure",4095914339.59167,2178534344.42929
+"Goats","All","Female Combined","Total",77345817077.9103,37787213196.9597
+"Goats","All","Female Combined","Mortality",18906470145.2921,21123740854.3577
+"Goats","All","Female Combined","Production loss",53229719276.6144,38968896802.4388
+"Goats","All","Female Combined","Health expenditure",5209627656.00378,2770991286.28295
+"Goats","All","Male Combined","Total",27793657354.6441,19853860834.5034
+"Goats","All","Male Combined","Mortality",9467776599.89916,15378831913.848
+"Goats","All","Male Combined","Production loss",16201563353.9481,20881842930.0091
+"Goats","All","Male Combined","Health expenditure",2124317400.79684,1137746990.35493
+"Goats","PPR","Juvenile Female","Total",408775855.301976,3935387221.03425
+"Goats","PPR","Juvenile Female","Mortality",240979842.060437,3892566612.30504
+"Goats","PPR","Juvenile Female","Production loss",97687796.79345,4022651218.94561
+"Goats","PPR","Juvenile Female","Health expenditure",70108216.4480892,41836100.3101172
+"Goats","PPR","Juvenile Male","Total",360097099.470141,3593640631.39429
+"Goats","PPR","Juvenile Male","Mortality",231670880.726001,3534114276.57928
+"Goats","PPR","Juvenile Male","Production loss",64314552.199843,3686488657.25864
+"Goats","PPR","Juvenile Male","Health expenditure",64111666.5442967,38572461.3277277
+"Goats","PPR","Subadult Female","Total",731797917.395424,5850609362.2979
+"Goats","PPR","Subadult Female","Mortality",492228503.902523,5775694720.00971
+"Goats","PPR","Subadult Female","Production loss",179315510.140499,5963267022.65944
+"Goats","PPR","Subadult Female","Health expenditure",60253903.3524018,34849558.374021
+"Goats","PPR","Subadult Male","Total",606891106.22594,8213024323.02192
+"Goats","PPR","Subadult Male","Mortality",303565925.251335,8156241624.01984
+"Goats","PPR","Subadult Male","Production loss",258222691.284329,8248816096.55812
+"Goats","PPR","Subadult Male","Health expenditure",45102489.6902753,26457681.3260636
+"Goats","PPR","Adult Female","Total",5428407651.0269,47153967124.6366
+"Goats","PPR","Adult Female","Mortality",4925221548.71632,47218620073.6632
+"Goats","PPR","Adult Female","Production loss",313242537.2258,47035185206.55
+"Goats","PPR","Adult Female","Health expenditure",189943565.084787,108786436.644829
+"Goats","PPR","Adult Male","Total",1962977802.2464,19910871206.3541
+"Goats","PPR","Adult Male","Mortality",1628394012.12615,19749664652.1909
+"Goats","PPR","Adult Male","Production loss",293421503.650696,20247170411.7193
+"Goats","PPR","Adult Male","Health expenditure",41162286.4695503,23978237.5574293
+"Goats","PPR","Overall","Total",9498947431.66701,60834607692.0638
+"Goats","PPR","Overall","Mortality",7822060712.78261,60705659131.2517
+"Goats","PPR","Overall","Production loss",1206204591.295,60740271705.2832
+"Goats","PPR","Overall","Health expenditure",470682127.5894,271927792.292135
+"Goats","PPR","Juvenile Combined","Total",768872954.772118,6653202184.94833
+"Goats","PPR","Juvenile Combined","Mortality",472650722.786444,6552708168.66533
+"Goats","PPR","Juvenile Combined","Production loss",162002348.993288,6801808874.98098
+"Goats","PPR","Juvenile Combined","Health expenditure",134219882.992386,80401563.9066997
+"Goats","PPR","Subadult Combined","Total",1338689023.62137,12553700714.7471
+"Goats","PPR","Subadult Combined","Mortality",795794429.153853,12421223453.7147
+"Goats","PPR","Subadult Combined","Production loss",437538201.42484,12674180172.9392
+"Goats","PPR","Subadult Combined","Health expenditure",105356393.042677,61148995.606303
+"Goats","PPR","Adult Combined","Total",7391385453.27299,52774216570.7627
+"Goats","PPR","Adult Combined","Mortality",6553615560.84166,52746318484.211
+"Goats","PPR","Adult Combined","Production loss",606664040.876999,52587504858.3409
+"Goats","PPR","Adult Combined","Health expenditure",231105851.554337,132402413.08413
+"Goats","PPR","Female Combined","Total",6568981423.7243,50177438328.251
+"Goats","PPR","Female Combined","Mortality",5658429894.67922,50185732357.2681
+"Goats","PPR","Female Combined","Production loss",590245844.159798,50087052556.1386
+"Goats","PPR","Female Combined","Health expenditure",320305684.885277,184243064.273637
+"Goats","PPR","Male Combined","Total",2929966007.9425,23876854692.4322
+"Goats","PPR","Male Combined","Mortality",2163630818.10348,23689250258.101
+"Goats","PPR","Male Combined","Production loss",615958747.134895,24209125230.1808
+"Goats","PPR","Male Combined","Health expenditure",150376442.704122,88287858.2335962
