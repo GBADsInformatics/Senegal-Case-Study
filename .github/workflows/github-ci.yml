@@ -13,9 +13,9 @@ jobs:
       CONTEXT: ./Shiny_app
       DOCKERFILE: ./Shiny_app/Dockerfile
 
-  # aws:
-  #   needs: docker
-  #   uses: GBADsInformatics/DevopsWorkflows/.github/workflows/aws.yml@main
-  #   secrets: inherit
-  #   with:
-  #     SERVICE_NAME: senegal-cs-dash-service
+  aws:
+    needs: docker
+    uses: GBADsInformatics/DevopsWorkflows/.github/workflows/aws.yml@main
+    secrets: inherit
+    with:
+      SERVICE_NAME: senegal-cs-dash-service
