@@ -4,6 +4,13 @@ FROM rocker/shiny
 # Installing linux packages
 RUN apt-get update && apt-get install -y \
     --no-install-recommends \
+    git-core \
+    libssl-dev \
+    libcurl4-gnutls-dev \
+    curl \
+    libsodium-dev \
+    libxml2-dev \
+    libicu-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
