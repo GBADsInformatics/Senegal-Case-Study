@@ -34,5 +34,8 @@ COPY Rprofile.site /etc/R
 COPY . /srv/shiny-server/
 COPY Rprofile.site /etc/shiny-server/shiny-server.conf
 
+# Adding run perm
+RUN chown shiny:shiny /var/lib/shiny-server
+
 # Running the program
 CMD ["/usr/bin/shiny-server"]
