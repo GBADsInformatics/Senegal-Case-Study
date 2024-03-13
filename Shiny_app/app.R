@@ -32,9 +32,44 @@ source("process_parameters.R")
 
 ## Shiny app
 ui <- fluidPage(
- titlePanel("GBADs case study in Senegal: small ruminants in the mixed crop livestock sector, for 2022"),
+ titlePanel("GBADs case study in Senegal: burden of disease in small ruminants in the mixed crop livestock sector"),
  
  tabsetPanel(
+   tabPanel("User guide",
+            tags$h2("Context"),
+            tags$body("This dashboard presents the results of a case study conducted in 2023. This study aimed at utilising existing data on livestock production and health in Senegal to estimate the burden of disease in small ruminants. We used a Dynamic Population Model (DPM) to estimate the Animal Health Loss Envelope (AHLE) for small ruminants in the mixed-crop livestock sector specifically.",tags$br(),"More information on the analytical approach is provided under the Ethiopia Case Study dashboard ",
+            a("accessible here.",href="https://gbadske.org/dashboards/ahle-casestudy/")),
+            tags$h2("Stakeholders"),
+            tags$body("The work presented here was funded by the International Development Research Centre in Canada and implemented by the University of Liverpool, the Institut Sénégalais de Recherches Agricoles and the Direction des Services Vétérinaires of Senegal."),
+            tags$h2("Navigation"),
+            tags$body("All results are presented for sheep and goats separately, as well as for both species combined. The species of interest can be selected in each tab via a drop-down list.",tags$br(),"All parameters and prices were aligned on year 2022.",tags$br(),"The results can be explored using the different tabs at the top of the page:"),
+            tags$body(
+              tags$ul(
+                tags$li("Gross margin"),
+                tags$body("This tab displays the annual gross margin estimated by the DPM for each scenario and species, as well as the different components of the partial budget analysis."),
+                tags$li("Scenario differences"),
+                tags$body("The differences between the ideal and the current scenarios are displayed here, for the gross margin and each of its components of revenue and costs."),
+                tags$li("AHLE"),
+                tags$body("This tab shows the estimated animal health loss envelope, for all causes combined and for Peste des Petits Ruminants specifically."),
+                tags$li("Types of AHLE"),
+                tags$body("This tabs shows the distribution of the AHLE between three types of losses: mortality, production losses and animal health expenditure."),
+                tags$li("Attribution"),
+                tags$body("This tab shows a breakdown of the AHLE into its mortality and production loss components and attributes these to high-level causes (infectious, non-infectious, or external), and to Peste des Petits Ruminants specifically."),
+                tags$li("Herd size"),
+                tags$body("This tab shows the livestock population used in the DPM and its predicted annual growth rate."),
+                tags$li("Input parameters"),
+                tags$body("These three tabs display the values of the input parameters used in the DPM, for the different species and scenarios."),
+              )
+            ),
+            tags$h2("Abbreviations"),
+            tags$body(
+              tags$ul(
+                tags$li("AHLE: Animal Health Loss Envelope"),
+                tags$li("DPM: Dynamic Population Model"),
+                tags$li("PPR: Peste des Petits Ruminants")
+              )
+            )
+            ),
    tabPanel("Gross margin",
     selectInput("speciesP1", "Select a species",
                 c("Sheep","Goats","Both")),
