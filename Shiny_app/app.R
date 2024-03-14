@@ -14,6 +14,7 @@ library(flextable)
 library(freedom)
 library(data.table)
 library(ggrepel)
+library(shinydashboard)
 
 ## helper functions
 format_scientific <- function(x) {
@@ -29,104 +30,115 @@ source("process_ahle_data.R")
 source("process_attribution_data.R")
 source("process_parameters.R")
 
-
 ## Shiny app
-ui <- fluidPage(
- titlePanel("GBADs case study in Senegal: burden of disease in small ruminants in the mixed crop livestock sector"),
- 
- tabsetPanel(
-   tabPanel("User guide",
-            tags$h2("Context"),
-            tags$body("This dashboard presents the results of a case study conducted in 2023. This study aimed at utilising existing data on livestock production and health in Senegal to estimate the burden of disease in small ruminants. We used a Dynamic Population Model (DPM) to estimate the Animal Health Loss Envelope (AHLE) for small ruminants in the mixed-crop livestock sector specifically.",tags$br(),"More information on the analytical approach is provided under the Ethiopia Case Study dashboard ",
-            a("accessible here.",href="https://gbadske.org/dashboards/ahle-casestudy/")),
-            tags$h2("Stakeholders"),
-            tags$body("The work presented here was funded by the International Development Research Centre in Canada and implemented by the University of Liverpool, the Institut Sénégalais de Recherches Agricoles and the Direction des Services Vétérinaires of Senegal."),
-            tags$h2("Navigation"),
-            tags$body("All results are presented for sheep and goats separately, as well as for both species combined. The species of interest can be selected in each tab via a drop-down list.",tags$br(),"All parameters and prices were aligned on year 2022.",tags$br(),"The results can be explored using the different tabs at the top of the page:"),
-            tags$body(
-              tags$ul(
-                tags$li("Gross margin"),
-                tags$body("This tab displays the annual gross margin estimated by the DPM for each scenario and species, as well as the different components of the partial budget analysis."),
-                tags$li("Scenario differences"),
-                tags$body("The differences between the ideal and the current scenarios are displayed here, for the gross margin and each of its components of revenue and costs."),
-                tags$li("AHLE"),
-                tags$body("This tab shows the estimated animal health loss envelope, for all causes combined and for Peste des Petits Ruminants specifically."),
-                tags$li("Types of AHLE"),
-                tags$body("This tabs shows the distribution of the AHLE between three types of losses: mortality, production losses and animal health expenditure."),
-                tags$li("Attribution"),
-                tags$body("This tab shows a breakdown of the AHLE into its mortality and production loss components and attributes these to high-level causes (infectious, non-infectious, or external), and to Peste des Petits Ruminants specifically."),
-                tags$li("Herd size"),
-                tags$body("This tab shows the livestock population used in the DPM and its predicted annual growth rate."),
-                tags$li("Input parameters"),
-                tags$body("These three tabs display the values of the input parameters used in the DPM, for the different species and scenarios."),
+
+# Define UI for the application
+ui <- dashboardPage(skin = "yellow",
+  dashboardHeader(title = "GBADs case study in Senegal: burden of disease in small ruminants in the mixed crop livestock sector", titleWidth = "100%"),
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("User guide", tabName = "tab1", icon = icon("file-lines")),
+      menuItem("Gross margin", tabName = "tab2", icon = icon("bar-chart")),
+      menuItem("Scenario differences", tabName = "tab3", icon = icon("bar-chart")),
+      menuItem("AHLE", tabName = "tab4", icon = icon("bar-chart")),
+      menuItem("Types of AHLE", tabName = "tab5", icon = icon("bar-chart")),
+      menuItem("Attribution", tabName = "tab6", icon = icon("bar-chart")),
+      menuItem("Herd size", tabName = "tab7", icon = icon("bar-chart")),
+      menuItem("Input parameters (1)", tabName = "tab8", icon = icon("bar-chart")),
+      menuItem("Input parameters (2)", tabName = "tab9", icon = icon("bar-chart")),
+      menuItem("Input parameters (3)", tabName = "tab10", icon = icon("bar-chart"))
+    ) 
+  ),
+  dashboardBody(
+      tabItems(
+        tabItem(tabName = "tab1",
+              tags$h2("Context"),
+              tags$body("This dashboard presents the results of a case study conducted in 2023 within the GBADs programme. This study aimed at utilising existing data related to livestock production and health in Senegal to estimate the burden of disease in small ruminants. We used a Dynamic Population Model (DPM) to estimate the Animal Health Loss Envelope (AHLE) for small ruminants in the mixed-crop livestock sector specifically.",tags$br()),
+              tags$body(HTML("<a href='https://gbadske.org/dashboards/ahle-casestudy/'>More information on the analytical approach can be found here.</a>")),
+              tags$h2("Stakeholders"),
+              tags$body("The work presented here was funded by the International Development Research Centre in Canada and led by the World Organization for Animal Health. It was implemented by the University of Liverpool, the Institut Sénégalais de Recherches Agricoles and the Direction des Services Vétérinaires du Ministère de l'Elevage et des Productions Animales, with the support of Murdoch University and the Ecole Inter-Etats des Sciences et Médecine Vétérinaires.",tags$br()),
+              tags$image(src="logos.jpg", width="65%", height="auto"),
+              tags$h2("Navigation"),
+              tags$body("All results are presented for sheep and goats separately, as well as for both species combined. The species of interest can be selected in each tab via a drop-down list.",tags$br(),tags$br(),"All parameters and prices were aligned on year 2022.",tags$br(),tags$br(),"The results can be explored using the different tabs at the top of the page:"),
+              tags$body(
+                tags$ul(
+                  tags$li(tags$span("Gross margin:", style = "text-decoration: underline;"), "this tab displays the annual gross margin estimated by the DPM for each scenario and species, as well as the different components of the partial budget analysis."),
+                  tags$li(tags$span("Scenario differences:", style = "text-decoration: underline;"), "the differences between the ideal and the current scenarios are displayed here, for the gross margin and each of its components of revenue and costs."),
+                  tags$li(tags$span("AHLE:", style = "text-decoration: underline;"), "this tab shows the estimated animal health loss envelope, for all causes combined and for Peste des Petits Ruminants specifically."),
+                  tags$li(tags$span("Types of AHLE:", style = "text-decoration: underline;"), "this tabs shows the distribution of the AHLE between three types of losses: mortality, production losses and animal health expenditure."),
+                  tags$li(tags$span("Attribution:", style = "text-decoration: underline;"), "this tab shows a breakdown of the AHLE into its mortality and production loss components and attributes these to high-level causes (infectious, non-infectious, or external), and to Peste des Petits Ruminants specifically."),
+                  tags$li(tags$span("Herd size:", style = "text-decoration: underline;"), "this tab shows the livestock population used in the DPM and its predicted annual growth rate."),
+                  tags$li(tags$span("Input parameters:", style = "text-decoration: underline;"), "these three tabs display the values of the input parameters used in the DPM, for the different species and scenarios.")
+                )
               )
-            ),
-            tags$h2("Abbreviations"),
-            tags$body(
-              tags$ul(
-                tags$li("AHLE: Animal Health Loss Envelope"),
-                tags$li("DPM: Dynamic Population Model"),
-                tags$li("PPR: Peste des Petits Ruminants")
-              )
-            )
-            ),
-   tabPanel("Gross margin",
-    selectInput("speciesP1", "Select a species",
-                c("Sheep","Goats","Both")),
-    fluidRow(tags$h3("Annual gross margin by scenario for the selected species"), plotlyOutput("plot1"))
-    ),
-   tabPanel("Scenario differences",
-            selectInput("speciesT1P2", "Select a species",
-                        c("Sheep","Goats","Both")),
-            fluidRow(tags$h3("Difference between ideal and current scenarios for the selected species"),plotlyOutput("plot2")),
-            fluidRow(uiOutput("table1"))
-   ),
-   tabPanel("AHLE",
-            selectInput("speciesT2", "Select a species",
-                        c("Sheep","Goats","Both")),
-            fluidRow(tags$h3("Distribution of the AHLE by age groups: all causes"),uiOutput("table2a")),
-            fluidRow(tags$h3("Distribution of the AHLE by age groups: PPR only"),uiOutput("table2b"))
-    ),
-   tabPanel("Types of AHLE",
-            selectInput("speciesT5P3", "Select a species",
-                        c("Sheep","Goats","Both")),
-            selectInput("DiseaseT5P3", "Cause(s) to consider",
-                        c("All causes" = "All",
-                          "PPR only" = "PPR")),
-            fluidRow(tags$h3("Distribution of the AHLE by type of losses for the selected species"),plotOutput("plot3")),
-            fluidRow(uiOutput("table5"))
-   ), tabPanel("Attribution",
-                fluidRow(tags$h3("Attribution of mortality and production losses (expert data)")),
-                fluidRow(tags$h4("Animal health expenditure is not accounted for in this graph.")),
-                fluidRow(plotlyOutput("plot6"))
-    ), tabPanel("Herd size",
-                selectInput("speciesP7", "Select a species",
-                            c("Sheep","Goats","Both")),
-                fluidRow(tags$h4("Population data used in the model: initial values and end-of-year values by scenario")), 
-                fluidRow(plotlyOutput("plot7")),
-                fluidRow(uiOutput("table4"))
-    ), tabPanel("Input parameters (1)",
-                selectInput("speciesP4", "Select a species",
-                            c("Sheep","Goats")),
-              fluidRow(tags$h3("Value of parameters which vary by species and by scenario")),
-              fluidRow(plotOutput("plot4"))
-   ), tabPanel("Input parameters (2)",
-               fluidRow(tags$h3("Value of parameters which do not vary by species and by scenario (point estimates)")),
-               fluidRow(uiOutput("table3")),
-               fluidRow(tags$h3("Value of parameters which do not vary by scenario (distributions)")),
-               fluidRow(plotOutput("plot5"))
-   ), tabPanel("Input parameters (3)",
-               fluidRow(tags$h3("Value of parameters used to assess the PPR-specific AHLE")),
-               fluidRow(tags$h4("All parameters below refer to the incidence of PPR specifically.")),
-               fluidRow(plotOutput("plot8"))
-   )
- )
-)
+      ),
+      tabItem(tabName = "tab2",
+              selectInput("speciesP1", "Select a species", c("Sheep","Goats","Both")),
+              h3("Annual gross margin by scenario for the selected species"),
+              plotlyOutput("plot1")
+      ),
+      tabItem(tabName = "tab3",
+              selectInput("speciesT1P2", "Select a species",
+                          c("Sheep","Goats","Both")),
+              h3("Difference between ideal and current scenarios for the selected species"),
+              plotlyOutput("plot2"),
+              fluidRow(uiOutput("table1"))
+      ),
+      tabItem(tabName = "tab4",
+              selectInput("speciesT2", "Select a species",
+                          c("Sheep","Goats","Both")),
+              h3("Distribution of the AHLE by age groups: all causes"),
+              uiOutput("table2a"),
+              h3("Distribution of the AHLE by age groups: PPR only"),
+              uiOutput("table2b")
+      ),
+      tabItem(tabName = "tab5",
+              selectInput("speciesT5P3", "Select a species",c("Sheep","Goats","Both")),
+              selectInput("DiseaseT5P3", "Cause(s) to consider",c("All causes" = "All","PPR only" = "PPR")),
+              h3("Distribution of the AHLE by type of losses for the selected species"),
+              plotOutput("plot3"),
+              fluidRow(uiOutput("table5"))
+      ),
+      tabItem(tabName = "tab6",
+              h3("Attribution of mortality and production losses (expert data)"),
+              h4("Animal health expenditure is not accounted for in this graph."),
+              plotlyOutput("plot6")
+      ),
+      tabItem(tabName = "tab7",
+              selectInput("speciesP7", "Select a species", c("Sheep","Goats","Both")),
+              h4("Population data used in the model: initial values and end-of-year values by scenario"), 
+              plotlyOutput("plot7"),
+              uiOutput("table4")
+      ),
+      tabItem(tabName = "tab8",
+              selectInput("speciesP4", "Select a species",c("Sheep","Goats")),
+              h3("Value of parameters which vary by species and by scenario"),
+              plotOutput("plot4")
+      ),
+      tabItem(tabName = "tab9",
+              h3("Value of parameters which do not vary by species and by scenario (point estimates)"),
+              uiOutput("table3"),
+              h3("Value of parameters which do not vary by scenario (distributions)"),
+              plotOutput("plot5")
+      ),
+      tabItem(tabName = "tab10",
+              h3("Value of parameters used to assess the PPR-specific AHLE"),
+              h4("All parameters below refer to the incidence of PPR specifically."),
+              plotOutput("plot8")
+      )
+      )
+      ),
+  tags$head(tags$style(HTML("
+    .main-header .logo {
+      background-color: orange;
+      color: black;
+    } ")))
+  )
 
 
 server <- function(input, output) {
 
-   output$plot1 <- renderPlotly({
+  output$plot1 <- renderPlotly({
     plot1 <- plot_ly() %>% 
       add_trace(data = DataSubset %>% filter(Species==input$speciesP1&ScenarioFactor=="Ideal"), y=~ItemFactor, x=~MeanSign, type='bar', color=I('#997700'), name="Ideal", error_x=list(array=~t*StDev, color="#a7a5a5", thickness=1)) %>% 
       add_trace(data = DataSubset %>% filter(Species==input$speciesP1&ScenarioFactor=="Current"), y=~ItemFactor, x=~MeanSign, type='bar', color=I('#eecc66'), name="Current", error_x=list(array=~t*StDev, color="#a7a5a5", thickness=1)) %>% 
