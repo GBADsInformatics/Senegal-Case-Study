@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
 # Installing R packages
 RUN install2.r --error --skipinstalled \
     shiny \
+    shinydashboard \
     ggplot2 \
     tidyverse \
     scales \
