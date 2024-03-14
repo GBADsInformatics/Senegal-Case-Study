@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     libsodium-dev \
     libxml2-dev \
     libicu-dev \
+    libjpeg-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
