@@ -59,7 +59,7 @@ ui <- dashboardPage(skin = "yellow",
               tags$body("The work presented here was funded by the International Development Research Centre in Canada and led by the World Organization for Animal Health. It was implemented by the University of Liverpool, the Institut Sénégalais de Recherches Agricoles and the Direction des Services Vétérinaires du Ministère de l'Elevage et des Productions Animales, with the support of Murdoch University and the Ecole Inter-Etats des Sciences et Médecine Vétérinaires.",tags$br()),
               tags$image(src="logos.jpg", width="65%", height="auto"),
               tags$h2("Navigation"),
-              tags$body("All results are presented for sheep and goats separately, as well as for both species combined. The species of interest can be selected in each tab via a drop-down list.",tags$br(),tags$br(),"All parameters and prices were aligned on year 2022.",tags$br(),tags$br(),"The results can be explored using the different tabs at the top of the page:"),
+              tags$body("All results are presented for sheep and goats separately, as well as for both species combined. The species of interest can be selected in each tab via a drop-down list.",tags$br(),tags$br(),"All parameters and prices were aligned on year 2022.",tags$br(),tags$br(),"The results can be explored using the different tabs in the sidebar menu:"),
               tags$body(
                 tags$ul(
                   tags$li(tags$span("Gross margin:", style = "text-decoration: underline;"), "this tab displays the annual gross margin estimated by the DPM for each scenario and species, as well as the different components of the partial budget analysis."),
