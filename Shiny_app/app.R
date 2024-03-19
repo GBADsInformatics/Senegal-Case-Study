@@ -36,7 +36,8 @@ source("process_parameters.R")
 ui <- dashboardPage(skin = "yellow",
   dashboardHeader(title = "GBADs case study in Senegal: burden of disease in small ruminants in the mixed crop livestock sector", titleWidth = "100%"),
   dashboardSidebar(
-    sidebarMenu(
+    sidebarMenu(      
+      menuItem("Back to GBADs dashboards", href = "https://gbadske.org/dashboards/", icon = icon("home")),
       menuItem("User guide", tabName = "tab1", icon = icon("file-lines")),
       menuItem("Gross margin", tabName = "tab2", icon = icon("bar-chart")),
       menuItem("Scenario differences", tabName = "tab3", icon = icon("bar-chart")),
@@ -46,8 +47,7 @@ ui <- dashboardPage(skin = "yellow",
       menuItem("Herd size", tabName = "tab7", icon = icon("bar-chart")),
       menuItem("Input parameters (1)", tabName = "tab8", icon = icon("bar-chart")),
       menuItem("Input parameters (2)", tabName = "tab9", icon = icon("bar-chart")),
-      menuItem("Input parameters (3)", tabName = "tab10", icon = icon("bar-chart")),
-      menuItem("Back to GBADs dashboards", href = "https://gbadske.org/dashboards/", icon = icon("home"))
+      menuItem("Input parameters (3)", tabName = "tab10", icon = icon("bar-chart"))
     ) 
   ),
   dashboardBody(
