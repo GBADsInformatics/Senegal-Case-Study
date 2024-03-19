@@ -46,7 +46,8 @@ ui <- dashboardPage(skin = "yellow",
       menuItem("Herd size", tabName = "tab7", icon = icon("bar-chart")),
       menuItem("Input parameters (1)", tabName = "tab8", icon = icon("bar-chart")),
       menuItem("Input parameters (2)", tabName = "tab9", icon = icon("bar-chart")),
-      menuItem("Input parameters (3)", tabName = "tab10", icon = icon("bar-chart"))
+      menuItem("Input parameters (3)", tabName = "tab10", icon = icon("bar-chart")),
+      menuItem("Back to GBADs dashboards", href = "https://gbadske.org/dashboards/", icon = icon("home"))
     ) 
   ),
   dashboardBody(
