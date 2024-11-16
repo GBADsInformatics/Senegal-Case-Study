@@ -95,7 +95,7 @@ ui <- dashboardPage(skin = "yellow",
       ),
       tabItem(tabName = "tab5",
               selectInput("speciesT5P3", "Select a species",c("Sheep","Goats","Both")),
-              selectInput("DiseaseT5P3", "Cause(s) to consider",c("All causes" = "All","PPR only" = "PPR")),
+              selectInput("DiseaseT5P3", "Cause(s) to consider",c("All causes" = "All causes","PPR only" = "PPR")),
               h3("Distribution of the AHLE by type of losses for the selected species"),
               plotOutput("plot3"),
               fluidRow(uiOutput("table5"))
@@ -183,7 +183,7 @@ output$plot2 <- renderPlotly({
  
  output$table2a <- renderUI({
    return(
-       AHLEData %>% filter(Species==input$speciesT2&Disease=="All") %>% 
+       AHLEData %>% filter(Species==input$speciesT2&Disease=="All causes") %>% 
        flextable(col_keys= c("GroupFactor", "pop", "AHLE_tot_simple","AHLE_tot_low_simple","AHLE_tot_up_simple", "AHLE_per_head","AHLE_per_head_low","AHLE_per_head_up", "AHLE_per_head_usd")) %>% 
        theme_booktabs() %>% 
        bg(i = ~Group == "Overall", bg='#fc9272') %>% 
@@ -310,7 +310,7 @@ output$plot2 <- renderPlotly({
                          Value = "Input value") %>%
        merge_v(j= "LongName") %>%
        autofit() %>%
-       bg(i = ~ Parameter %in% c("Beta","CullM","hides_rate_mor","Man_J","prpn_feed_paid_for"), bg = "#a7a5a5", part = "body") %>%
+       bg(i = ~ Parameter %in% c("Beta_SubAF","CullM","hides_rate_mor","Man_J","prpn_feed_paid_for"), bg = "#a7a5a5", part = "body") %>%
        htmltools_value()
    ) 
  })

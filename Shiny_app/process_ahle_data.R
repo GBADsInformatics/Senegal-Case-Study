@@ -22,15 +22,15 @@ DataFull$Sign <- ifelse(DataFull$Item=='Gross Margin', 0, ifelse(DataFull$Item %
 
 # ---------------------------------------------------------------------------
 ### 0. Initial population data for reference
-DataParameters <- read.csv("data/ahle_params_senegal.csv")
+DataParameters <- read.csv("data/ahle_params_senegal_samples.csv")
 InitialPopData <- DataParameters %>% 
   filter(Parameter %like% "t0" & Scenario=="Current") %>% 
   mutate(Scenario="Initial",Pop=Value) %>% 
   mutate(Group=recode(Parameter,
-                      'N_NM_t0'='Juvenile Male', 
-                      "N_NF_t0"='Juvenile Female',
-                      "N_JM_t0"='Subadult Male',
-                      "N_JF_t0"='Subadult Female',
+                      'N_JM_t0'='Juvenile Male', 
+                      "N_JF_t0"='Juvenile Female',
+                      "N_SubAM_t0"='Subadult Male',
+                      "N_SubAF_t0"='Subadult Female',
                       "N_AM_t0"='Adult Male',
                       "N_AF_t0"='Adult Female')) %>% 
   select(Scenario,Species,Group,Pop)
@@ -46,12 +46,12 @@ InitialPopData <- rbind(InitialPopData,BothInitialPopData)
 
 InitialPopDataGrouped <- InitialPopData %>% 
   mutate(Group=recode(Group,
-                      "Adult Female"="Adult Combined",
-                      "Adult Male"="Adult Combined",
-                      "Juvenile Female"="Juvenile Combined",
-                      "Juvenile Male"="Juvenile Combined",
-                      "Subadult Female"="Subadult Combined",
-                      "Subadult Male"="Subadult Combined")) %>%
+                      "Adult Female"="Adult",
+                      "Adult Male"="Adult",
+                      "Juvenile Female"="Juvenile",
+                      "Juvenile Male"="Juvenile",
+                      "Subadult Female"="Subadult",
+                      "Subadult Male"="Subadult")) %>%
   group_by(Scenario, Species, Group) %>% 
   summarize(Pop=sum(Pop))
 
@@ -147,11 +147,11 @@ DataAllTable <- DataAllTable %>% mutate(Contribution=recode(Sign, "0" = "-", "-1
 # Animal Health Expenditure (AHE) = Health Cost under Current scenario
 # AHLE due to mortality = GM(ZeroMMort, without health costs) - GM(Current)
 # AHLE due to morbidity = GM(Ideal) - GM(ZeroMMort, without health costs)
-groupval <- c('Juvenile Combined', 'Subadult Combined', 'Adult Combined','Overall')
+groupval <- c('Juvenile', 'Subadult', 'Adult','Overall')
 AHLEData <- read.csv("data/ahle_components.csv")
 AHLEData <- AHLEData %>% 
   subset(Group %in% groupval) %>% 
-  mutate(AHLE=recode(AHLE,"Mortality"="mort","Production loss"="morb","Health expenditure"="AHE", "Total"="tot")) %>% 
+  mutate(AHLE=recode(AHLE,"Mortality losses"="mort","Production losses"="morb","Animal health expenditure"="AHE", "Total AHLE"="tot")) %>% 
   pivot_wider(names_from="AHLE", values_from=c("Mean","SD"))
 
 PopAHLEData <- subset(InitialPopData, Group %in% groupval, select=c('Species','Group','Pop'))

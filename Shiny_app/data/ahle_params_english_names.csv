@@ -1,65 +1,60 @@
 Parameter,LongName,Present
-N_NF_t0,Initial population of juvenile females,Pyramid
-N_NM_t0,Initial population of juvenile males,Pyramid
-N_JF_t0,Initial population of subadult females,Pyramid
-N_JM_t0,Initial population of subadult males,Pyramid
+N_JF_t0,Initial population of juvenile females,Pyramid
+N_JM_t0,Initial population of juvenile males,Pyramid
+N_SubAF_t0,Initial population of subadult females,Pyramid
+N_SubAM_t0,Initial population of subadult males,Pyramid
 N_AF_t0,Initial population of adult females,Pyramid
 N_AM_t0,Initial population of adult males,Pyramid
-Beta,Transition rate between age groups (per month),Ideal
+Beta_JF,Duration of juvenile compartment (months),Ideal
+Beta_SubAF,Duration of subadult compartment (months),Ideal
 part,Annual parturition rate per adult female,Both
 prolif,Number of live youngs per birth,Both
 prop_F_milked,Proportion of females which are milked after giving birth,Ideal
 lac_duration,Duration of the lactation period (in days),Both
 avg_daily_yield_ltr,Average daily milk yield per female (in litres),Both
 milk_value_ltr,Value of milk (FCFA per litre),Ideal
-GammaNF,Net monthly offtake rate for juvenile females,Ideal
-GammaJF,Net monthly offtake rate for subadult females,Ideal
-GammaAF,Net monthly offtake rate for adult females,Ideal
-GammaNM,Net monthly offtake rate for juvenile males,Ideal
-GammaJM,Net monthly offtake rate for subadult males,Ideal
-GammaAM,Net monthly offtake rate for adult males,Ideal
-AlphaN,Monthly mortality rate in juveniles,Both
-AlphaJ,Monthly mortality rate in subadults,Both
-AlphaF,Monthly mortality rate in adult females,Both
-AlphaM,Monthly mortality rate in adult males,Both
-CullF,End-of-life culling rate for females (per month),Ideal
-CullM,End-of-life culling rate for males (per month),Ideal
-lwNF,Live weight of juvenile females (in kg),Both
-lwNM,Live weight of juvenile males (in kg),Both
-lwJF,Live weight of subadult females (in kg),Both
-lwJM,Live weight of subadult males (in kg),Both
+Gamma_JF,Net monthly offtake rate for juvenile females,Ideal
+Gamma_SubAF,Net monthly offtake rate for subadult females,Ideal
+Gamma_AF,Net monthly offtake rate for adult females,Ideal
+Gamma_JM,Net monthly offtake rate for juvenile males,Ideal
+Gamma_SubAM,Net monthly offtake rate for subadult males,Ideal
+Gamma_AM,Net monthly offtake rate for adult males,Ideal
+Alpha_JF,Monthly mortality rate in juvenile females,Both
+Alpha_JM,Monthly mortality rate in juvenile males,Both
+Alpha_SubAF,Monthly mortality rate in subadult females,Both
+Alpha_SubAM,Monthly mortality rate in subadult males,Both
+Alpha_AF,Monthly mortality rate in adult females,Both
+Alpha_AM,Monthly mortality rate in adult males,Both
+CullF,Age at end-of-life culling for females (months),Ideal
+CullM,Age at end-of-life culling for males (months),Ideal
+lwJF,Live weight of juvenile females (in kg),Both
+lwJM,Live weight of juvenile males (in kg),Both
+lwSubAF,Live weight of subadult females (in kg),Both
+lwSubAM,Live weight of subadult males (in kg),Both
 lwAF,Live weight of adult females (in kg),Both
 lwAM,Live weight of adult males (in kg),Both
 ccy,Carcass meat yield (as a proportion of live weight),No
-fvNF,Value of juvenile females (FCFA per live animal),Both
-fvJF,Value of subadult females (FCFA per live animal),Both
+fvJF,Value of juvenile females (FCFA per live animal),Both
+fvSubAF,Value of subadult females (FCFA per live animal),Both
 fvAF,Value of adult females (FCFA per live animal),Both
-fvNM,Value of juvenile males (FCFA per live animal),Both
-fvJM,Value of subadult males (FCFA per live animal),Both
+fvJM,Value of juvenile males (FCFA per live animal),Both
+fvSubAM,Value of subadult males (FCFA per live animal),Both
 fvAM,Value of adult males (FCFA per live animal),Both
-hides_rate,Number of hides exploited per slaughtered animal,Ideal
-hides_rate_mor,Number of hides exploited per dead animal,Ideal
-hides_value,Value of hides (FCFA per piece),Both
-Man_N,Daily manure production per juvenile (in kg),Ideal
-Man_J,Daily manure production per subadult (in kg),Ideal
+Man_J,Daily manure production per juvenile (in kg),Ideal
+Man_SubA,Daily manure production per subadult (in kg),Ideal
 Man_A,Daily manure production per adult (in kg),Ideal
 Man_value,Value of manure (FCFA per kg),Ideal
-DM_req_prpn_NF,Dry matter requirement of juvenile females (as a proportion of live weight),Ideal
-DM_req_prpn_NM,Dry matter requirement of juvenile males (as a proportion of live weight),Ideal
-DM_req_prpn_JF,Dry matter requirement of subadult females (as a proportion of live weight),Ideal
-DM_req_prpn_JM,Dry matter requirement of subadult males (as a proportion of live weight),Ideal
-DM_req_prpn_AF,Dry matter requirement of adult females (as a proportion of live weight),Ideal
-DM_req_prpn_AM,Dry matter requirement of adult males (as a proportion of live weight),Ideal
+DM_req_prpn_AM,Dry matter requirement of subadult males (as a proportion of live weight),Ideal
 prpn_lskeepers_purch_feed,Proportion of farmers who purchase any livestock feed,Ideal
 prpn_feed_paid_for,"Proportion of feed that is purchased, among farmers who purchase any",Ideal
 Feed_cost_kg,Valeur of livestock feed (FCFA per kg dry matter),Ideal
 DM_in_feed,Proportion of dry matter in purchased feed,Ideal
-Lab_SR,Montly cost of farm labor (FCFA per head),Both
+Labour_cost_head_AM,Montly cost of farm labor (FCFA per head),Both
 lab_non_health,Proportion of labour which relates to non-health-related tasks,Both
-Health_exp,Animal health expenditure (FCFA per head per month),Both
+Health_exp_prev_AM,Animal health expenditure (FCFA per head per month),Both
 Interest_rate,Interest rate,No
-Infrastructure_per_head,Value of infrastructure (FCFA per head),No
-Num_months,Number of months simulated by the model,No
+timestep_Nof_days,Average number of days per month,No
+Num_timesteps,Number of months simulated by the model,No
 annual_inc_SA_J,Annual incidence of disease in juveniles and subadults,PPR
 annual_inc_AM,Annual incidence of disease in adult males,PPR
 annual_inc_AF,Annual incidence of disease in adult females,PPR
