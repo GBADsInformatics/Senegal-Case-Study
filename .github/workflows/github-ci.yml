@@ -5,8 +5,18 @@ on:
   workflow_dispatch:
   
 jobs:
+  commit-hash:
+    name: Commit SHA
+    runs-on: ubuntu-latest
+    outputs:
+      sha7: ${{ steps.commit-hash.outputs.sha7 }}
+    steps:
+      - name: Get Commit SHA
+        id: commit-hash
+        run: echo "sha7=$(echo ${GITHUB_SHA} | cut -c1-7)" >> "$GITHUB_OUTPUT"
+
   docker:
-    uses: GBADsInformatics/DevopsWorkflows/.github/workflows/docker.yml@main
+    uses: GBADsInformatics/DevopsWorkflows/.github/workflows/docker.yml@v2.0
     secrets: inherit
     with:
       IMAGE_NAME: senegal-cs-dash
@@ -14,8 +24,16 @@ jobs:
       DOCKERFILE: ./Shiny_app/Dockerfile
 
   aws:
-    needs: docker
-    uses: GBADsInformatics/DevopsWorkflows/.github/workflows/aws.yml@main
-    secrets: inherit
+    needs: [commit-hash, docker]
+    uses: GBADsInformatics/DevopsWorkflows/.github/workflows/aws.yml@v2.0
+    secrets:
+      template-input: >-
+        ApplicationName=senegal-cs-dash,
+        DockerURI=gbadsinformatics/senegal-cs-dash:${{ needs.commit-hash.outputs.sha7 }},
+        BaseURL=/dashboards/senegal-casestudy,
+        ListenerRulePriority=20
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     with:
-      SERVICE_NAME: senegal-cs-dash-service
+      stack-name: senegal-cs-dash-stack
+      AWS_REGION: ca-central-1
